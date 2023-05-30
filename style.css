@@ -1,0 +1,773 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+.nav-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.nav-container img{
+    height: 82%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    border-bottom: 4px solid red;
+    height: 18%;
+}
+.logo img{
+    width: 100px;
+}
+.detail-container{
+    display: flex;
+    flex-direction: column;
+}
+.top-detail{
+    margin-bottom: 10px;
+}
+nav hr{
+    margin-bottom: 10px;
+    background-color: lightgray;
+}
+.top-detail ul, .bottom-detail ul{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    cursor: pointer;
+}
+.top-detail ul li, .bottom-detail ul li{
+    margin-right: 30px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.top-detail ul li i, .bottom-detail ul li i{
+    margin-left: 10px;
+    text-align: center;
+    color: rgb(53, 53, 53);
+    transition: 0.3s;
+}
+/* .top-detail ul li:hover i, .bottom-detail ul li:hover i{
+    rotate: 180deg;
+} */
+.bottom-detail ul{
+    display: flex;
+    flex-direction: row;
+}
+
+/* ------------------------------------------------------nav end-------------------------- */
+
+
+.discover-types{
+    padding: 20px 10%;
+}
+.discover-types h1{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+.discover-types h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.content{
+    margin-bottom: 80px;
+}
+
+.discover-types a{
+    margin-left: 40%;
+    padding: 20px;
+    font-size: 25px;
+    font-family: sans-serif;
+    border: none;
+    background-color: lightgray;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.discover-types a:hover{
+    background-color: black;
+    color: white;
+}
+
+.discover-types .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+.discover-types .content .sedan-container img{
+    width: 100%;
+}
+
+.sedan-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.sedan-bottom h1{
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.sedan-bottom span{
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.promotion-section{
+    padding: 6% 10%;
+}
+.promotion-section .promotion-inner{
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.promotion-section .promotion-inner .promotion{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.promotion-section .promotion-inner .promotion a i{
+    text-align: center;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 50px;
+    color: red;
+}
+.promotion-section .promotion-inner .promotion a{
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+.service-desc{
+    margin-left: 30px;
+    text-align: center;
+    max-width: 400px;
+}
+.hybrid{
+    display: flex;
+    width: 100%;
+}
+.hybrid-left{
+    width: 38%;
+}
+.hybrid-right{
+    width: 38%;
+}
+
+.hybrid-left img{
+    width: 100%;
+}
+.hybrid-middle{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.hybrid-middle img{
+    width: 100%;
+}
+.hybrid-right img{
+    width: 100%;
+}
+.discover-types hr{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.discover-types p{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: rgb(175, 174, 174);
+}
+
+.product-container{
+    width: 100%;
+    display: flex;
+    max-height: 500px;
+}
+.product-container h4{
+    margin-top: 20px;
+}
+.product1{
+    display: flex;
+    flex-direction: column;
+    width: 67%;
+    margin-right: 2%;
+    cursor: pointer;
+}
+.product2{
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+    cursor: pointer;
+}
+.product2 img{
+    width: 105%;
+}
+.product2 .product-bottom img{
+    width: 100%;
+}
+.product1 img{
+    width: 100%;
+    height: 800px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.contact{
+    padding: 10% 10%;
+}
+.contact form{
+    padding: 20px;
+    padding-left: 50px;
+    border: 1px solid black;
+}
+.contact form input{
+    width: 1000px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+.contact form textarea{
+    resize: none;
+    width: 1000px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    outline: none;
+    padding: 10px;
+    display: block;
+}
+.contact form button{
+    padding: 15px 30px;
+    margin-left: 45%;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    color: rgb(144, 141, 141);
+}
+form h1{
+    text-align: center;
+}
+.contact form h3{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.company-policies{
+    padding: 0 10%;
+    display: flex;
+    border-top: 1px solid black;
+    padding-top: 50px;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+.company-policies .product-policy{
+    display: flex;
+    flex-direction: column;
+}
+.company-policies .product-policy h4{
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.company-policies .product-policy a{
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: rgb(55, 55, 55);
+    cursor: pointer;
+}
+.hotline-info{
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+    padding-bottom: 100px;
+}
+.hotline-info .company-hotline h2{
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.hotline-info .company-hotline p{
+    margin-bottom: 15px;
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+.hotline-info .company-hotline p i{
+    margin-right: 10px;
+}
+.hotline-info .company-hotline input{
+    padding: 10px;
+    border-color: white;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+.click-btn{
+    padding: 15px;
+    position: fixed;
+    right: 30px;
+    top: 650px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 30px;
+    display: none;
+    transition: 0.3s;
+}
+
+/* .tab-container{
+    width: 90vmin;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 120px;
+    background-color: #ffffff;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+} */
+/* 
+.tabs{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+h3{
+    background-color: #e4e9fd;
+    text-align: center;
+    padding: 15px 0;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.tab-content{
+    background-color: #ffffff;
+    padding: 50px 40px;
+    
+}
+
+.tab-content h4{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #000224;
+    font-weight: 600;
+}
+
+.tab-content p{
+    text-align: justify;
+    line-height: 1.9;
+    letter-spacing: 0.4px;
+}
+
+.tab-content div{
+    display: none;
+    
+}
+.tab-content div .car-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+.tab-content div .car-content img{
+    width: 100%;
+}
+
+.tab-content .active{
+    display: block;
+}
+
+.tabs .active{
+    background-color: #ffffff;
+    color: #000224;
+} */
+
+.nav-container1 form{
+    display: flex;
+    flex-direction: column;
+    padding: 5% 10%;
+    margin-bottom: 100px;
+}
+.nav-container1 form h1{
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.nav-container1 form input{
+    padding: 10px;
+    max-width: 500px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+.nav-container1 form .checkbox{
+    display: flex;
+}
+.nav-container1 form .checkbox p{
+    text-align: center;
+    margin-left: 10px;
+    font-size: 18px;
+}
+.nav-container1 form .checkbox p span{
+    color: blue;
+    cursor: pointer;
+}
+.nav-container1 form button{
+    width: 200px;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: rgb(63, 4, 4);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+.nav-container1{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.car-container{
+    padding: 5% 10%;
+}
+.car-container .car-detail{
+    display: flex;
+}
+
+.car-container .car-detail .car-image{
+    width: 47%;
+    margin-right: 6%;
+}
+.car-container .car-detail .car-image img{
+    width: 100%;
+}
+.car-container .car-detail .car-infor h1{
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.car-container .car-detail .car-infor{
+    width: 47%;
+}
+.car-container .car-detail .car-infor h3{
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(61, 61, 61);
+}
+.car-container .car-detail .car-infor .car-info1{
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.car-container .car-detail .car-infor .car-info1 h3{
+    color: red;
+}
+.car-container .car-detail .car-infor .car-info1 h3:first-child{
+    margin-right: 20px;
+    border-right: 1px solid black;
+    padding-right: 20px;
+}
+.car-container .car-detail .car-infor .car-info2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.car-container .car-detail .car-infor .car-info2 .seat{
+    border-right: 1px solid black;
+    padding-right: 30px;
+}
+.car-container .car-detail .car-infor .car-info2 .designs{
+    border-right: 1px solid black;
+    padding-right: 30px;
+}
+.car-container .car-detail .car-infor .car-info2 h3{
+    font-size: 18px;
+}
+.car-container .car-detail .car-infor .car-info2 h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.car-container .car-detail .car-infor .car-info3{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.car-container .car-detail .car-infor .car-info3 .origin{
+    border-right: 1px solid black;
+    padding-right: 30px;
+}
+.car-container .car-detail .car-infor .car-info3 h3{
+    font-size: 18px;
+}
+.car-container .car-detail .car-infor .car-info3 h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inner-outer-image{
+    padding: 3% 10%;
+}
+
+.inner-outer-image .outer-image{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+.inner-outer-image .outer-image img{
+    width: 100%;
+    height: 300px;
+}
+.inner-outer-image .inner-image .inner-top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+.inner-outer-image .inner-image .inner-bottom img{
+    height: 600px;
+}
+.inner-outer-image .inner-image img{
+    width: 100%;
+    height: 450px;
+}
+
+.signup-form{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    padding: 50px;
+    background-color: transparent;
+    font-size: 25px;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.signup-form a{
+    color: white;
+}
+.contact-us{
+    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-left: 37%;
+}
+.contact-us a{
+    padding: 50px;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+}
+.contact-us a:hover{
+    background-color: black;
+    color: white;
+}
+.discover-types .content .sedan-container .check-car{
+    padding: 10px;
+    font-size: 18px;
+    color: black;
+    background-color: transparent;
+    margin-left: 150px;
+}
+.discover-types .content .sedan-container .check-car:hover{
+    color: white;
+    background-color: black;
+}
+@media (max-width: 900px){
+    
+    .detail-container{
+        display: none;
+    }
+    .contact{
+        overflow: hidden;
+    }
+    .discover-types .content{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    .services{
+        display: flex;
+        flex-direction: column;
+    }
+    .company-policies{
+        display: flex;
+        flex-direction: column;
+    }
+    .company-hotline input{
+        display: none;
+    }
+    .contact form{
+        padding: 0;
+    }
+    .contact form input{
+        width: 100%;
+    }
+    .contact form textarea{
+        width: 100%;
+    }
+    .discover-types{
+        padding: 10px;
+    }
+    .logo{
+        
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        transform: translate(-50%, -50%);
+    }
+    .sedan-container img{
+        width: 99%;
+    }
+    .service-desc{
+        padding: 0;
+    }
+    .discover-types h1{
+        font-size: 20px;
+    }
+    .discover-types h2{
+        font-size: 16px;
+    }
+    .discover-types a{
+        padding: 10px;
+        font-size: 18px;
+        margin-left: 30%;
+    }
+    .discover-types .sedan-container .services .service-desc p{
+        display: none;
+    }
+    .discover-types .sedan-container .services .service-desc h3{
+        display: none;
+    }
+
+    .discover-types .technology-container .hybrid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .discover-types .technology-container .hybrid .hybrid-left{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .discover-types .technology-container .hybrid .hybrid-middle{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .discover-types .technology-container .hybrid .hybrid-right{
+        width: 100%;
+    }
+    .discover-types .technology-container .hybrid .hybrid-left img{
+        width: 100%;
+    }
+    .discover-types .technology-container .hybrid .hybrid-middle img{
+       display: none;
+    }
+    .discover-types .technology-container .hybrid .hybrid-right img{
+        width: 100%;
+    }
+    .hotline-info {
+        display: flex;
+        flex-direction: column;
+    }
+    .hotline-info .company-hotline p{
+        color: gray;
+    }
+    .contact form button{
+        padding: 15px;
+        font-size: 15px;
+        margin-left: 40%;
+    }
+    .car-container{
+        padding: 5% 5%;
+        margin-bottom: 20px;
+    }
+    .car-container .car-detail{
+        flex-direction: column;
+    }
+    .car-container .car-detail .car-image{
+        width: 100%;
+    }
+    .car-container .car-detail .car-infor{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .inner-outer-image{
+        padding: 0 5%;
+    }
+    .inner-outer-image .outer-image{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .inner-outer-image .inner-image .inner-top{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .signup-form{
+        padding: 15px;
+    }
+    .signup-form a{
+        font-size: 16px;
+    }
+    .contact-us{
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+    .contact-us a{
+        font-size: 16px;
+    }
+    .nav-container1 form{
+        margin-top: 100px;
+    }
+    .nav-container1 nav{
+        border: none;
+    }
+}
